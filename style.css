@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2;
+    margin: 20px;
+}
+h1 {
+    text-align: center;
+    color: #cc0066;
+}
+.malla-container {
+    position: relative;
+}
+.flechas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.malla {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.semestre {
+    background-color: #ffb3d9;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+}
+.semestre h2 {
+    text-align: center;
+    color: #800040;
+}
+.ramo {
+    background-color: #ff99cc;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    z-index: 2;
+}
+.ramo:hover {
+    background-color: #ff66b3;
+}
+.ramo.aprobado {
+    background-color: #cccccc;
+    text-decoration: line-through;
+}
+.linea {
+    stroke: #cc0066;
+    stroke-width: 2;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.linea.visible {
+    opacity: 1;
+}
